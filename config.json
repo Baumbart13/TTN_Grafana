@@ -1,0 +1,68 @@
+{
+	"machine":{
+		"_comment":"IP-Address is another one, that is used for actually listening to web-requests",
+		"location":"0.0.0.0:8080",
+		"credentials":{
+			"user":"your_user",
+			"pass":"your_password"
+		}
+	},
+	"database":{
+		"type":"PostgreSQL",
+		"location":"xxx.xxx.xxx.xxx:5432",
+		"credentials":{
+			"user":"your_user",
+			"pass":"your_password"
+		},
+		"db_name":"your_db_name",
+		"connection_retries":3,
+		"decimals_after":2
+	},
+	"ttn":{
+		"abbreviations":{
+			"hwa":"Hambergweg A",
+			"hwb":"Hambergweg B",
+			"hwc":"Hambergweg C",
+			"hwd":"Hambergweg D",
+			"hwe":"Hambergweg E",
+			"hwf":"Hambergweg F",
+			"hwg":"Hambergweg G",
+			"awi":"Apfelwiese",
+			"swi":"Spielwiese",
+			"rs":"Rosenstraße",
+			"as":"Ahornstraße",
+			"ss":"Sonnenstraße",
+			"zw":"Zillerweg",
+			"mw":"Mitterweg",
+			"dw":"Dammweg",
+			"hw":"Hambergweg",
+			"ew":"Edelweißweg",
+			"aw":"Alleeweg",
+			"sw":"Steinmauerweg",
+			"gw":"Gartenweg",
+			"tw":"Tennisweg",
+			"ma":"Markusplatz",
+			"lu":"Lukasplatz",
+			"st":"Stephanieplatz",
+			"fj":"Franz-Josef-Platz",
+			"lw":"Lindenweg"
+		},
+		"applications":[
+			{
+				"aufenfeld-cv62":{
+					"_comment":"Include for each application the api-key here",
+					"api-key":"x.y.z",
+					"sdm230":[
+						"res10", "ss18", "as05", "as04", "ss19", "ss21", "ss20", "res09", "res08", "as06"
+					]
+				},
+				"aufenfeld-cv138":{
+					"api-key":"x.y.z",
+					"raspi":[
+						"01"
+					]
+				}
+			}
+		]
+	}
+}
